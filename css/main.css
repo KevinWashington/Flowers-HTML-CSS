@@ -10,6 +10,42 @@
   --dark-color: #000;
 }
 
+@keyframes float-1{
+  0%{
+    transform: translateY(0px) rotate(10deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(15deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(10deg);
+  }
+}
+
+@keyframes float-2{
+  0%{
+    transform: translateY(0px) rotate(-15deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(-10deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(-15deg);
+  }
+}
+
+@keyframes float-3{
+  0%{
+    transform: translateY(0px) rotate(15deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(10deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(15deg);
+  }
+}
+
 body {
   display: flex;
   align-items: center;
@@ -68,20 +104,19 @@ main > div{
   display: block;
   width: 100%;
   background-color: white;
-  border: 1px solid #000;
-  margin: 10px auto;
+
 }
 
 #pol-1{
-  transform: rotateZ(15deg);
+  animation: float-1 6s ease-in-out infinite;
 }
 
 #pol-2{
-  transform: rotateZ(-15deg);
+  animation: float-2 6s ease-in-out infinite;
 }
 
 #pol-3{
-  transform: rotateZ(15deg);
+  animation: float-3 6s ease-in-out infinite;
 }
 
 #iza{
@@ -92,9 +127,13 @@ main > div{
 #cinema{
   transform: rotateZ(40deg);
   width: 25vw;
-  height: 35vw;
+  height: 20vw;
   border: 1px solid #000;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+  animation: float-1 6s ease-in-out infinite;
+}
+#cinema img{
+  width: 100%;
 }
 
 footer{
