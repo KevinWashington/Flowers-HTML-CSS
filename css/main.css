@@ -29,8 +29,14 @@ header{
 }
 
 main{
-  display: flex;
-  justify-content: space-evenly;
+  padding-block: 40px;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
+  gap: 10px; /* Espaçamento opcional entre os itens */
+  max-width: 100vw;
+  color: white;
+  font-size: small ;
 }
 
 main > div{
@@ -40,12 +46,8 @@ main > div{
   align-items: center;
 }
 
-main > div:not(.container){
-  max-width: 10%;
-}
 
 .container{
-  max-width: 40%;
   text-align: center;
   line-height: 1.5rem;
 }
@@ -56,15 +58,15 @@ main > div:not(.container){
 }
 
 .polaroid{
-  width: 150px;
-  height: 200px;
+  width: 25vw;
+  padding: 10px;
   border: 1px solid #000;
   background-color: #FFF;
 }
 
 .polaroid video{
   display: block;
-  width: 85%;
+  width: 100%;
   background-color: white;
   border: 1px solid #000;
   margin: 10px auto;
@@ -88,9 +90,9 @@ main > div:not(.container){
 }
 
 #cinema{
-  transform: rotateZ(50deg);
-  width: 250px;
-  height: 150px;
+  transform: rotateZ(40deg);
+  width: 25vw;
+  height: 35vw;
   border: 1px solid #000;
   background-color: white;
 }
@@ -141,7 +143,7 @@ footer{
 
 .flowers {
   position: relative;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 .flower {
