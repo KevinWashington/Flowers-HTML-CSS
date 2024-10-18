@@ -27,7 +27,7 @@
     transform: translateY(0px) rotate(-15deg);
   }
   50%{
-    transform: translateY(10px) rotate(-10deg);
+    transform: translateY(-10px) rotate(-10deg);
   }
   100%{
     transform: translateY(0px) rotate(-15deg);
@@ -39,10 +39,22 @@
     transform: translateY(0px) rotate(15deg);
   }
   50%{
-    transform: translateY(10px) rotate(10deg);
+    transform: translateY(-10px) rotate(10deg);
   }
   100%{
     transform: translateY(0px) rotate(15deg);
+  }
+}
+
+@keyframes float-4{
+  0%{
+    transform: translateY(0px) rotate(-3deg);
+  }
+  50%{
+    transform: translateY(10px) rotate(3deg);
+  }
+  100%{
+    transform: translateY(0px) rotate(-3deg);
   }
 }
 
@@ -88,10 +100,6 @@ main > div{
   line-height: 1.5rem;
 }
 
-.laco{
-  transform: rotateZ(-10deg);
-  background-color: red;
-}
 
 .polaroid{
   width: 25vw;
@@ -107,16 +115,26 @@ main > div{
 
 }
 
+.laco{
+  max-width: 15vw;
+  animation: float-4 10s ease-in-out infinite;
+}
+
+#pacoca{
+  width: 25vw;
+  animation: float-2 16s ease-in-out infinite;
+}
+
 #pol-1{
-  animation: float-1 6s ease-in-out infinite;
+  animation: float-1 14s ease-in-out infinite;
 }
 
 #pol-2{
-  animation: float-2 6s ease-in-out infinite;
+  animation: float-2 12s ease-in-out infinite;
 }
 
 #pol-3{
-  animation: float-3 6s ease-in-out infinite;
+  animation: float-3 10s ease-in-out infinite;
 }
 
 #iza{
